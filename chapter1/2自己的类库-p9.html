@@ -44,6 +44,11 @@
         }
     });
     var person = Person.find(1);
+	Person.extend({
+		extended:function(klass){
+			console.log(klass, " was extended!");
+		}
+	});
 </script>
 </body>
 </html>
